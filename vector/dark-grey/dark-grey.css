@@ -401,7 +401,7 @@ body .ui-button.ui-widget:is(:hover, :active, :focus) {
 }
 
 /*
- * Save dialog
+ * VisualEditor save dialog
  */
 .ve-ui-mwSaveDialog-savePanel .ve-ui-mwSaveDialog-summary {
 	background: transparent;
@@ -415,6 +415,14 @@ body .ui-button.ui-widget:is(:hover, :active, :focus) {
 .ve-ui-mwSaveDialog-savePanel .ve-ui-mwSaveDialog-summaryLabel,
 .ve-ui-mwSaveDialog-savePanel .ve-ui-mwSaveDialog-license {
 	color: var(--fg);
+}
+
+/*
+ * VisualEditor template dialog
+ */
+.oo-ui-widget
+.ve-ui-mwTransclusionOutlineTemplateWidget-sticky {
+	background-color: var(--bg-main2);
 }
 
 /*
@@ -1200,6 +1208,12 @@ body .ui-button.ui-widget:is(:hover, :active, :focus) {
 	background: transparent;
 }
 
+.oo-ui-layout
+.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {
+	background-color: var(--bg-main2);
+	border-color: var(--bdr-color);
+}
+
 .mw-message-box-warning.mw-message-box {
 	background-color: var(--bg-main2);
 	border: 1px solid var(--bdr-color);
@@ -1210,6 +1224,11 @@ body .ui-button.ui-widget:is(:hover, :active, :focus) {
 .oo-ui-iconElement-icon,
 .oo-ui-indicatorElement-indicator {
 	filter: invert(100%);
+}
+
+/* But this one has a good default color */
+span.oo-ui-iconElement-icon.oo-ui-icon-alert.oo-ui-image-warning {
+	filter: none;
 }
 
 /*
