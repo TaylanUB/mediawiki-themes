@@ -1864,3 +1864,19 @@ div#reportProblemForm {
 body .ui-dialog .ui-icon-closethick {
 	filter: invert(100%);
 }
+
+/*
+ * Cargo
+ */
+
+table.cargoTable {
+	border: 1px solid var(--bdr-white);
+}
+
+table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n+1) {
+	background: var(--bg-dark);
+}
+
+table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
+	background: var(--bg-darker);
+}
