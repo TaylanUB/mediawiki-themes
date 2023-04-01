@@ -172,13 +172,14 @@ h1,
 h2,
 h3 {
 	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
-	border-bottom: 1px solid var( --bdr-color );
 }
 
-h4,
-h5,
-h6 {
-	border-bottom: none;
+h1, h2 {
+	border-bottom: 1px solid var(--bdr-color);
+}
+
+h3 {
+	border-bottom: 1px dashed var(--bdr-color);
 }
 
 p {
