@@ -424,7 +424,9 @@ body .ui-button.ui-widget:is(:hover, :active, :focus) {
  * VisualEditor template dialog
  */
 .oo-ui-widget
-.ve-ui-mwTransclusionOutlineTemplateWidget-sticky {
+.ve-ui-mwTransclusionOutlineTemplateWidget-sticky,
+.oo-ui-layout
+.ve-ui-mwTransclusionOutlineControlsWidget {
 	background-color: var(--bg-main2);
 }
 
@@ -1212,7 +1214,9 @@ body .ui-button.ui-widget:is(:hover, :active, :focus) {
 }
 
 .oo-ui-layout
-.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {
+.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning,
+.oo-ui-layout
+.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice {
 	background-color: var(--bg-main2);
 	border-color: var(--bdr-color);
 }
