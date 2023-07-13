@@ -1790,3 +1790,22 @@ table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n+1) {
 table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
 	background: var(--bg-darker);
 }
+
+/*
+ * Popups
+ */
+
+.mwe-popups,
+.mwe-popups .mwe-popups-container,
+.mwe-popups .mwe-popups-extract {
+	background: var(--bg-darker) !important;
+	color: var(--fg) !important;
+}
+
+.mwe-popups .mwe-popups-extract[dir="ltr"]::after {
+	background-image: linear-gradient(to right, transparent, var(--bg-darker)) !important;
+}
+
+.mwe-popups .mwe-popups-settings-icon {
+	filter: invert(100%);
+}
