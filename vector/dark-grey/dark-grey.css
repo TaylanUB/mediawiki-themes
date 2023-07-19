@@ -1500,6 +1500,18 @@ table.wikitable th {
 	text-align: center;
 }
 
+table.wikitable.jquery-tablesorter th.headerSort {
+	background-image: url(/w/extensions/Theme/vector/dark-grey/sort_both.svg)
+}
+
+table.wikitable.jquery-tablesorter th.headerSortUp {
+	background-image: url(/w/extensions/Theme/vector/dark-grey/sort_up.svg)
+}
+
+table.wikitable.jquery-tablesorter th.headerSortDown {
+	background-image: url(/w/extensions/Theme/vector/dark-grey/sort_down.svg)
+}
+
 table.wikitable tr :is(th, td) {
 	border: 1px solid var(--bdr-color);
 }
