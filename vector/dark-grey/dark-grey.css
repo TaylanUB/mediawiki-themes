@@ -1873,6 +1873,23 @@ td.diff-deletedline .diffchange {
 }
 
 /*
+ * SyntaxHighlighting
+ */
+
+.mw-highlight.mw-highlight-lines pre {
+	box-shadow: none;
+}
+
+.mw-highlight.mw-highlight-lines pre .linenos {
+	color: var(--fg-dark);
+}
+
+.mw-highlight.mw-highlight-lines pre a:hover .linenos,
+.mw-highlight.mw-highlight-lines pre .hll a .linenos {
+	color: var(--fg-light);
+}
+
+/*
  * ProblemReports
  */
 
