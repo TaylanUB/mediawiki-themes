@@ -167,11 +167,15 @@ h1, h2, h3 {
 	font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
 }
 
-h1, h2 {
+.vector-body h3 {
+	font-weight: normal;
+}
+
+.vector-body :is(h1, h2), h1.mw-first-heading {
 	border-bottom: 1px solid var(--bdr-color);
 }
 
-h3 {
+.vector-body h3 {
 	border-bottom: 1px dashed var(--bdr-color);
 }
 
