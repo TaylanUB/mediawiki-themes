@@ -191,10 +191,41 @@ table {
 	color: var(--fg);
 }
 
+.mw-parser-output .dataTables_wrapper .dataTables_length,
+.mw-parser-output .dataTables_wrapper .dataTables_filter,
+.mw-parser-output .dataTables_wrapper .dataTables_info,
+.mw-parser-output .dataTables_wrapper .dataTables_processing,
+.mw-parser-output .dataTables_wrapper .dataTables_paginate {
+	color: var(--fg);
+}
+
+.mw-parser-output table.dataTable tbody tr,
+.mw-parser-output table.dataTable.display tbody tr.even > .sorting_1,
+.mw-parser-output table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+	background: var(--bg-main);
+}
+
+.mw-parser-output table.dataTable.stripe tbody tr.odd,
+.mw-parser-output table.dataTable.display tbody tr.odd,
+.mw-parser-output table.dataTable.display tbody tr.odd > .sorting_1,
+.mw-parser-output table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+	background: var(--bg-main2);
+}
+
+.mw-parser-output table.dataTable.hover tbody tr:hover,
+.mw-parser-output table.dataTable.display tbody tr:hover,
+.mw-parser-output table.dataTable.display tbody tr:hover > .sorting_1,
+.mw-parser-output table.dataTable.order-column.hover tbody tr:hover > .sorting_1,
+.mw-parser-output table.dataTable.display tbody tr:hover > .sorting_1,
+.mw-parser-output table.dataTable.order-column.hover tbody tr:hover > .sorting_1 {
+	background: var(--bg-main3);
+}
+
 /*
  * Inputs
  */
 input[type=text],
+input[type=search],
 input:not([type]),
 select,
 option {
