@@ -1939,3 +1939,70 @@ table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
 .mwe-popups .mwe-popups-settings-icon {
 	filter: invert(100%);
 }
+
+/*
+ * Scribunto
+ */
+
+#mw-scribunto-console
+.mw-scribunto-console-fieldset,
+#mw-scribunto-console
+.mw-scribunto-message,
+#mw-scribunto-console
+.mw-scribunto-error,
+#mw-scribunto-console
+.mw-scribunto-normalOutput {
+	background: none;
+	color: inherit;
+}
+
+#mw-scribunto-console
+.mw-scribunto-input {
+	background: var(--bg-dark);
+	border: 1px solid var(--bdr-color);
+	color: inherit;
+	font-family: monospace;
+	font-weight: normal;
+}
+
+#mw-scribunto-console
+input[type="button"] {
+	margin-top: 10px;
+	background: var(--btn-prim-bg);
+	border: 1px solid var(--btn-prim-bdr);
+	color: var(--btn-prim-fg);
+}
+
+/*
+ * CodeEditor
+ */
+
+form .wikiEditor-ui .wikiEditor-ui-view {
+	border: 1px solid var(--bdr-white);
+}
+
+form .wikiEditor-ui .ace-tm {
+	background: var(--bg-dark);
+	color: var(--fg);
+}
+
+form .wikiEditor-ui .ace-tm .ace_gutter {
+	background: var(--bg-main);
+}
+
+form .wikiEditor-ui .ace-tm .ace_gutter-active-line {
+	background: var(--bg-main2);
+}
+
+form .wikiEditor-ui .ace-tm .ace_cursor {
+	color: var(--fg);
+}
+
+form .wikiEditor-ui .ace-tm .ace_print-margin {
+	background: var(--fg-dark);
+}
+
+form .wikiEditor-ui .codeEditor-status {
+	background: var(--bg-main2);
+	border-top: 1px solid var(--bdr-white);
+}
