@@ -2025,6 +2025,12 @@ form .wikiEditor-ui .ace-tm .ace_gutter-active-line {
 	background: var(--bg-main2);
 }
 
+form .wikiEditor-ui .ace-tm .ace_storage,
+form .wikiEditor-ui .ace-tm .ace_keyword,
+form .wikiEditor-ui .ace-tm .ace_constant.ace_numeric {
+	color: skyblue;
+}
+
 form .wikiEditor-ui .ace-tm .ace_cursor {
 	color: var(--fg);
 }
