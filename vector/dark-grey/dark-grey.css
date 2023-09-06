@@ -1971,7 +1971,10 @@ form .wikiEditor-ui .cm-mw-extlink,
 form .wikiEditor-ui .cm-mw-free-extlink,
 form .wikiEditor-ui .cm-mw-link,
 form .wikiEditor-ui .cm-mw-link-tosection,
-form .wikiEditor-ui .cm-mw-section-header {
+form .wikiEditor-ui .cm-mw-section-header,
+form .wikiEditor-ui .cm-mw-extlink-protocol,
+form .wikiEditor-ui .cm-mw-free-extlink-protocol,
+form .wikiEditor-ui .cm-mw-extlink-bracket {
 	color: skyblue;
 }
 
@@ -2002,12 +2005,19 @@ form .wikiEditor-ui .cm-mw-template {
 }
 
 form .wikiEditor-ui .cm-mw-apostrophes-bold,
-form .wikiEditor-ui .cm-mw-apostrophes-italic {
+form .wikiEditor-ui .cm-mw-apostrophes-italic,
+form .wikiEditor-ui .cm-mw-doubleUnderscore,
+form .wikiEditor-ui .cm-mw-signature,
+form .wikiEditor-ui .cm-mw-hr {
 	color: aqua;
 }
 
 form .wikiEditor-ui .cm-mw-comment {
 	color: dimgrey;
+}
+
+form .wikiEditor-ui .cm-mw-skipformatting {
+	background: darkcyan;
 }
 
 form .wikiEditor-ui .CodeMirror-line::selection,
