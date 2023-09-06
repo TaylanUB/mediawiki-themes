@@ -2043,3 +2043,72 @@ form .wikiEditor-ui .codeEditor-status {
 	background: var(--bg-main2);
 	border-top: 1px solid var(--bdr-white);
 }
+
+/*
+ * CodeMirror
+ */
+
+form .wikiEditor-ui .CodeMirror {
+	background: var(--bg-dark);
+	color: var(--fg);
+}
+
+form .wikiEditor-ui .CodeMirror-gutters {
+	background: var(--bg-main);
+}
+
+form .wikiEditor-ui .CodeMirror-linenumber {
+	color: var(--fg-dark);
+}
+
+form .wikiEditor-ui .cm-mw-link-pagename,
+form .wikiEditor-ui .cm-mw-link-bracket,
+form .wikiEditor-ui .cm-mw-link-delimiter,
+form .wikiEditor-ui .cm-mw-extlink,
+form .wikiEditor-ui .cm-mw-free-extlink,
+form .wikiEditor-ui .cm-mw-link,
+form .wikiEditor-ui .cm-mw-link-tosection,
+form .wikiEditor-ui .cm-mw-section-header {
+	color: skyblue;
+}
+
+form .wikiEditor-ui .cm-mw-parserfunction-name,
+form .wikiEditor-ui .cm-mw-parserfunction-bracket,
+form .wikiEditor-ui .cm-mw-parserfunction-delimiter {
+	color: dimgrey;
+}
+
+form .wikiEditor-ui .cm-mw-exttag-bracket,
+form .wikiEditor-ui .cm-mw-exttag-attribute,
+form .wikiEditor-ui .cm-mw-htmltag-bracket,
+form .wikiEditor-ui .cm-mw-htmltag-attribute,
+form .wikiEditor-ui .cm-mw-exttag-name,
+form .wikiEditor-ui .cm-mw-htmltag-name {
+	color: darkcyan;
+}
+
+form .wikiEditor-ui .cm-mw-template-name,
+form .wikiEditor-ui .cm-mw-template-argument-name,
+form .wikiEditor-ui .cm-mw-template-delimiter,
+form .wikiEditor-ui .cm-mw-template-bracket {
+	color: lightcoral;
+}
+
+form .wikiEditor-ui .cm-mw-template {
+	color: var(--fg-light);
+}
+
+form .wikiEditor-ui .cm-mw-apostrophes-bold,
+form .wikiEditor-ui .cm-mw-apostrophes-italic {
+	color: aqua;
+}
+
+form .wikiEditor-ui .cm-mw-comment {
+	color: dimgrey;
+}
+
+form .wikiEditor-ui .CodeMirror-line::selection,
+form .wikiEditor-ui .CodeMirror-line > span::selection,
+form .wikiEditor-ui .CodeMirror-line > span > span::selection {
+	background: dimgray;
+}
