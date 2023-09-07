@@ -1954,27 +1954,29 @@ form .wikiEditor-ui .codeEditor-status {
 form .wikiEditor-ui .CodeMirror {
 	background: var(--bg-dark);
 	color: var(--fg);
+	caret-color: white;
 }
 
 form .wikiEditor-ui .CodeMirror-gutters {
 	background: var(--bg-main);
+	border: none;
 }
 
 form .wikiEditor-ui .CodeMirror-linenumber {
 	color: var(--fg-dark);
 }
 
+form .wikiEditor-ui .cm-mw-link,
+form .wikiEditor-ui .cm-mw-link-tosection,
 form .wikiEditor-ui .cm-mw-link-pagename,
 form .wikiEditor-ui .cm-mw-link-bracket,
 form .wikiEditor-ui .cm-mw-link-delimiter,
 form .wikiEditor-ui .cm-mw-extlink,
-form .wikiEditor-ui .cm-mw-free-extlink,
-form .wikiEditor-ui .cm-mw-link,
-form .wikiEditor-ui .cm-mw-link-tosection,
-form .wikiEditor-ui .cm-mw-section-header,
 form .wikiEditor-ui .cm-mw-extlink-protocol,
+form .wikiEditor-ui .cm-mw-extlink-bracket,
+form .wikiEditor-ui .cm-mw-free-extlink,
 form .wikiEditor-ui .cm-mw-free-extlink-protocol,
-form .wikiEditor-ui .cm-mw-extlink-bracket {
+form .wikiEditor-ui .cm-mw-section-header {
 	color: skyblue;
 }
 
@@ -1986,9 +1988,9 @@ form .wikiEditor-ui .cm-mw-parserfunction-delimiter {
 
 form .wikiEditor-ui .cm-mw-exttag-bracket,
 form .wikiEditor-ui .cm-mw-exttag-attribute,
+form .wikiEditor-ui .cm-mw-exttag-name,
 form .wikiEditor-ui .cm-mw-htmltag-bracket,
 form .wikiEditor-ui .cm-mw-htmltag-attribute,
-form .wikiEditor-ui .cm-mw-exttag-name,
 form .wikiEditor-ui .cm-mw-htmltag-name {
 	color: darkcyan;
 }
@@ -1997,7 +1999,17 @@ form .wikiEditor-ui .cm-mw-template-name,
 form .wikiEditor-ui .cm-mw-template-argument-name,
 form .wikiEditor-ui .cm-mw-template-delimiter,
 form .wikiEditor-ui .cm-mw-template-bracket {
-	color: lightcoral;
+	color: salmon;
+}
+
+form .wikiEditor-ui .cm-mw-templatevariable {
+	color: var(--fg);
+}
+
+form .wikiEditor-ui .cm-mw-templatevariable-bracket,
+form .wikiEditor-ui .cm-mw-templatevariable-name,
+form .wikiEditor-ui .cm-mw-templatevariable-delimiter {
+	color: seagreen;
 }
 
 form .wikiEditor-ui .cm-mw-template {
@@ -2020,8 +2032,33 @@ form .wikiEditor-ui .cm-mw-skipformatting {
 	background: darkcyan;
 }
 
+form .wikiEditor-ui .cm-mw-ext-ground,
+form .wikiEditor-ui .cm-mw-ext2-ground,
+form .wikiEditor-ui .cm-mw-ext3-ground,
+form .wikiEditor-ui .cm-mw-template-ext-ground,
+form .wikiEditor-ui .cm-mw-template-ext2-ground,
+form .wikiEditor-ui .cm-mw-template-ext3-ground,
+form .wikiEditor-ui .cm-mw-template2-ext-ground,
+form .wikiEditor-ui .cm-mw-template2-ext2-ground,
+form .wikiEditor-ui .cm-mw-template2-ext3-ground,
+form .wikiEditor-ui .cm-mw-template3-ext-ground,
+form .wikiEditor-ui .cm-mw-template3-ext2-ground,
+form .wikiEditor-ui .cm-mw-template3-ext3-ground,
+form .wikiEditor-ui .cm-mw-doubleUnderscore,
+form .wikiEditor-ui .cm-mw-signature,
+form .wikiEditor-ui .cm-mw-hr {
+	background: none;
+}
+
+form .wikiEditor-ui .cm-mw-matchingbracket {
+	background: none;
+	box-shadow: none;
+	color: aqua;
+}
+
 form .wikiEditor-ui .CodeMirror-line::selection,
 form .wikiEditor-ui .CodeMirror-line > span::selection,
 form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 	background: dimgray;
+	color: white;
 }
