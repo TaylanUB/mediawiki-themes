@@ -2065,3 +2065,31 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 	background: dimgray;
 	color: white;
 }
+
+/*
+ * TabberNeue
+ */
+
+.tabber .tabber__header {
+	box-shadow: inset 0 -1px 0 0 var(--bdr-color);
+}
+
+.tabber .tabber__indicator {
+	background: var(--link-vis);
+}
+
+.tabber .tabber__tab,
+.tabber .tabber__tab:visited {
+	color: var(--fg-dark);
+}
+
+.tabber .tabber__tab:active,
+.tabber .tabber__tab[aria-selected="true"],
+.tabber .tabber__tab[aria-selected="true"]:visited {
+	color: var(--link-vis);
+}
+
+.tabber .tabber__tab:hover,
+.tabber .tabber__tab[aria-selected="true"]:hover {
+	color: var(--link);
+}
