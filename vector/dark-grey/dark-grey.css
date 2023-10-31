@@ -317,13 +317,16 @@ a.new:visited {
 }
 
 .mw-parser-output a.external,
-.mw-parser-output a.external:visited {
+.mw-parser-output a.external:visited,
+.mw-parser-output a.extiw,
+.mw-parser-output a.extiw:visited {
 	color: var( --link );
 	background: none;
 	padding: 0;
 }
 
-.mw-parser-output a.external:visited {
+.mw-parser-output a.external:visited,
+.mw-parser-output a.extiw:visited {
 	color: var( --link-vis );
 }
 
