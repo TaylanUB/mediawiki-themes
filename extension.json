@@ -24,7 +24,7 @@
 	},
 	"ThemeModules": {
 		"monobook": [ "dark", "pink", "stellarbook" ],
-		"vector": [ "dark", "dark-grey" ]
+		"vector": [ "dark-grey", "light" ]
 	},
 	"APIModules": {
 		"themelist": {
@@ -78,22 +78,16 @@
 				}
 			}
 		},
-		"themeloader.skins.vector.dark": {
+		"themeloader.skins.vector.dark-grey": {
 			"styles": {
-				"vector/dark/dark.css": {
-					"media": "screen"
-				},
-				"vector/dark/dark.special.preferences.styles.less": {
-					"media": "screen"
-				},
-				"modules/ext.echo.dark.css": {
+				"vector/dark-grey/dark-grey.css": {
 					"media": "screen"
 				}
 			}
 		},
-		"themeloader.skins.vector.dark-grey": {
+		"themeloader.skins.vector.light": {
 			"styles": {
-				"vector/dark-grey/dark-grey.css": {
+				"vector/light/light.css": {
 					"media": "screen"
 				}
 			}

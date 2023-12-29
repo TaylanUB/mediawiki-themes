@@ -1,0 +1,321 @@
+/**
+ * Base CSS from OSRS Wiki (https://oldschool.runescape.wiki),
+ * licensed under CC-BY-NC-SA 3.0 (https://creativecommons.org/licenses/by-nc-sa/3.0).
+ * All modifications licensed under CC-BY-NC-SA 3.0, NOT 4.0, as per SA term.
+*/
+body {
+	/* Color defs */
+	--light-body-main: #e2dbc8;
+	--light-body-light: #d8ccb4;
+	--light-body-mid: #d0bd97;
+	--light-body-dark: #b8a282;
+	--light-body-border: #94866d;
+	--light-body-background-color: #c0a886;
+
+	--light-button-background: #605443;
+	--light-button-color: white;
+	--light-button-border: #3c352a;
+	--light-button-dark: #18140c;
+	--light-button-light: #3a301d;
+
+	--light-sidebar: #cfc08d;
+	--light-search-box: #efeee6;
+
+	--light-background-text-color: #444;
+	--light-background-link-color: #52351e;
+
+	--light-link-color: #139bb0;
+	--light-link-visited-color: #184578;
+	--light-redlink-color: #ba0000;
+	--light-text-color: black;
+
+	--mw-code-background-color: #ddd4bb;
+
+	/* Things actually for the body */
+	background-color: initial;
+}
+
+#mw-page-base {
+	background-image: none;
+	background-color: initial;
+}
+
+/* Fixing vector default */
+html {
+	background-color: #d6c3ae !important;
+	background-image: url(/w/images/6/63/Light_theme_background.webp);
+	background-position: 0 -100px; /* todo sky: actually fix the background image instead of offsetting it*/
+	background-size: 1920px;
+	background-attachment: scroll;
+}
+
+.mw-body, .parsoid-body {
+	background-color: var(--light-body-main);
+	color: var(--light-text-color);
+}
+
+.mw-body {
+	border-color: transparent;
+	box-shadow: 0 0 7px rgba(0,0,0,0.15);
+}
+
+/* tabs at the top */
+.vector-menu-tabs-legacy ul li,
+#p-cactions {
+	background: var(--light-body-background-color);
+}
+
+.vector-menu-tabs-legacy ul li:hover:not(.selected),
+#p-cactions:hover {
+	background: var(--light-body-mid);
+}
+
+.vector-menu-tabs-legacy .mw-list-item.selected {
+	background: var(--light-body-main);
+}
+
+.vector-menu-tabs ul li:not(.selected),
+#mw-head .vector-menu-dropdown .vector-menu-heading {
+	box-shadow: inset 0 -7px 7px -7px rgba(0,0,0,0.15);
+}
+
+.vector-menu-dropdown .vector-menu-content {
+	border-color: transparent;
+	background-color: var(--light-body-light);
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+}
+
+#mw-head {
+	top: -1px;
+}
+
+.vector-menu-tabs,
+.vector-menu-tabs a,
+#mw-head .vector-menu-dropdown
+.vector-menu-heading {
+	background: none;
+}
+
+/* Remove the 1px offset */
+.vector-menu-tabs-legacy {
+	padding-left: 0px;
+}
+
+/* user bar */
+#p-personal {
+	right: 0;
+	top: 0;
+	border-radius: 0 0 0 4px;
+	height: 1.875em;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+	background-color: var(--light-body-main);
+}
+#p-personal ul {
+	padding: 0 1em 0 1ch;
+}
+
+.vector-user-menu-legacy #pt-userpage {
+	padding-top: 0.29em;
+}
+
+/* Search bar */
+.vector-search-box {
+	margin: 0;
+}
+
+.vector-search-box form {
+	margin: 0;
+}
+
+.vector-search-box-inner {
+	height: 2.5em;
+	background-color: var(--light-search-box);
+}
+
+.vector-search-box-input {
+	color: var(--text-color);
+	height: 100%;
+	border: none;
+	background: none;
+	padding-left: 0.75em;
+}
+
+#p-cactions-label {
+	padding-top: 1em;
+	padding-bottom: 0.7em;
+}
+
+
+/* Tables */
+.wikitable {
+	--wikitable-header-bg: var(--light-body-dark);
+	--wikitable-bg: var(--light-body-light);
+	--wikitable-color: var(--light-text-color);
+	--wikitable-border: var(--light-body-border);
+	background: var(--wikitable-bg);
+	color: var(--wikitable-color);
+	border-color: var(--wikitable-border);
+	box-shadow: 0 0.25rem 0.35rem -0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.wikitable > tr > th,
+.wikitable > tr > td,
+.wikitable > * > tr > th,
+.wikitable > * > tr > td {
+	border-color: var(--wikitable-border);
+}
+
+.wikitable > tr > th.table-noborder,
+.wikitable > tr > td.table-noborder,
+.wikitable > * > tr > th.table-noborder,
+.wikitable > * > tr > td.table-noborder {
+	border-left-style: hidden;
+	border-right-style: hidden;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.wikitable > tr > th,
+.wikitable > * > tr > th {
+	background-color: var(--wikitable-header-bg);
+}
+
+.wikitable > tr > th.table-noborder,
+.wikitable > tr > td.table-noborder,
+.wikitable > * > tr > th.table-noborder,
+.wikitable > * > tr > td.table-noborder {
+	border-left-style: hidden;
+	border-right-style: hidden;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.wikitable > tr > th,
+.wikitable > * > tr > th {
+	background-color: var(--wikitable-header-bg);
+}
+
+/* toc */
+.toc, .toccolours {
+	background-color: var(--light-body-light);
+	border: 1px solid var(--bg3wiki-tooltip-border);
+	padding: 0;
+}
+
+.toc .toctitle {
+	background-color: var(--light-body-dark);
+	padding: 0.25em 1em;
+}
+
+.toc > ul {
+	padding: 0.75em 1em;
+	margin: 0;
+}
+
+/* Links */
+a {
+	color: var(--light-link-color);
+}
+
+a:visited,
+a:active {
+	color: var(--light-link-visited-color);
+}
+
+a.new {
+	color: var(--light-redlink-color);
+}
+
+a.new:visited {
+	color: var(--light-redlink-color);
+}
+
+.mw-parser-output a.extiw,
+.mw-parser-output a.external {
+	color: var(--light-link-color);
+}
+
+.mw-parser-output a.extiw:visited,
+.mw-parser-output a.external:visited,
+.mw-parser-output a.extiw:active,
+.mw-parser-output a.external:active {
+	color: var(--light-link-visited-color);
+}
+
+.jsPurgeLink a.external {
+	color: var(--light-link-color);
+}
+
+.vector-menu-tabs-legacy li a {
+	color: var(--light-background-link-color);
+	padding-top: 1em;
+}
+
+pre, code, .mw-code {
+	background: var(--mw-code-background-color);
+	color: var(--light-text-color);
+	border: 1px solid var(--bg3wiki-tooltip-border);
+}
+
+/* Code boxes on MediaWiki: pages. */
+.mw-content-ltr.mw-highlight-lines pre, .mw-content-ltr.content .mw-highlight-lines pre {
+	box-shadow: inset 2.75em 0 0 var(--light-body-mid);
+}
+
+/* Sidebar */
+.vector-menu-heading-label {
+	color: var(--light-background-text-color);
+}
+
+#p-Special a, #p-tb a, #p-navigation a {
+	color: var(--light-background-link-color);
+}
+
+/* Catlinks */
+.catlinks {
+	background: var(--light-body-light);
+	border: 1px solid var(--bg3wiki-tooltip-border);
+	padding: 8px 15px;
+	box-shadow: 0 0.25rem 0.35rem -0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* "Your edit was saved" notif */
+.mw-notification {
+	background-color: var(--light-body-light);
+	border-color: var(--light-body-border);
+	color: var(--light-text-color);
+}
+
+.vector-body blockquote {
+	border-left: 4px solid var(--light-body-dark);
+}
+
+/* Recent changes page */
+.mw-rcfilters-ui-changesListWrapperWidget .mw-changeslist-legend {
+	background-color: var(--light-body-light);
+	border: 1px solid var(--bg3wiki-tooltip-border);
+}
+
+.mw-rcfilters-ui-filterTagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {
+	background-color: var(--light-body-light);
+	border: 1px solid var(--bg3wiki-tooltip-border);
+	color: black;
+}
+
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button,
+.mw-rcfilters-ui-filterTagMultiselectWidget-views-select-widget.oo-ui-widget,
+.oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled {
+	background-color: var(--light-body-light);
+	border: 1px solid var(--bg3wiki-tooltip-border);
+}
+
+.oo-ui-window-content.oo-ui-dialog-content {
+	background-color: var(--light-body-main);
+}
+
+/* Image frames */
+div.thumbinner {
+	border: none;
+	background-color: var(--light-body-mid);
+}
