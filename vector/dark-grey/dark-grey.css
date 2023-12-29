@@ -19,6 +19,24 @@
  */
 
 /*
+ * =======================
+ * = BG 3 Wiki Specifics =
+ * =======================
+ */
+
+html {
+	/* This is just for while the background image is loading. */
+	background-color: black !important;
+
+	/* Whole-page image background */
+	background-image: url(/static/background.webp);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top;
+	background-size: cover;
+}
+
+/*
  * =========================
  * = Centering the content =
  * =========================
