@@ -1251,10 +1251,8 @@ body .ui-button.ui-widget:is(:hover, :active, :focus) {
 	background: transparent;
 }
 
-.oo-ui-layout
-.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning,
-.oo-ui-layout
-.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice {
+.oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning,
+.oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice {
 	background-color: var(--bg-main2);
 	border-color: var(--bdr-color);
 }
