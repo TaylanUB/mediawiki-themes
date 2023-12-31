@@ -1724,6 +1724,14 @@ table.mw_metadata td {
 }
 
 /*
+ * File upload
+ */
+.mw-destfile-warning {
+	background: var(--bg-dark);
+	border: 1px solid var(--bdr-color);
+}
+
+/*
  * History, Changes, Watchlist, Contributions
  */
 #mw-indicator-mw-helplink a {
