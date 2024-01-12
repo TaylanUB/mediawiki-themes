@@ -37,45 +37,6 @@ html {
 }
 
 /*
- * =========================
- * = Centering the content =
- * =========================
- */
-
-:root {
-	--right-margin: 20px;
-}
-
-html body {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1280px;
-}
-
-#p-personal {
-	right: var(--right-margin);
-}
-
-#p-search {
-	margin-right: var(--right-margin);
-}
-
-.suggestions {
-	/* We can't get around !important here due to inline CSS. */
-	right: var(--right-margin) !important;
-}
-
-/* For Extension:UniversalLanguageSelector */
-.imeselector {
-	position: fixed;
-}
-
-#content {
-	margin-right: var(--right-margin);
-}
-
-/*
  * =======================
  * = Color configuration =
  * =======================
@@ -166,6 +127,7 @@ html body {
  */
 
 html body {
+	min-width: 30em;
 	background: var(--bg-dark);
 	color: var(--fg);
 }
@@ -1520,6 +1482,10 @@ div.suggestions-result {
  * = Regular wiki page contents =
  * ==============================
  */
+
+#content {
+	margin-right: 1em;
+}
 
 /*
  * Table of Contents
