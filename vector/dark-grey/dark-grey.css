@@ -369,6 +369,10 @@ body .ui-dialog .ui-dialog-buttonpane.ui-widget-content {
 	color: var( --fg );
 }
 
+body .ui-menu .ui-menu-item a {
+	color: var(--fg);
+}
+
 .ui-widget .ui-widget-header {
 	border: 1px solid var( --bdr-color );
 }
@@ -800,17 +804,26 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
 	background: transparent;
 }
 
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownWidget .oo-ui-dropdownWidget-handle {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownWidget .oo-ui-dropdownWidget-handle,
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownInputWidget
+select {
 	background: var( --bg-dark );
 	border: 1px solid var( --bdr-white );
 	color: var( --fg );
 }
 
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownWidget .oo-ui-dropdownWidget-handle:is( :hover, :active, :focus ) {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownWidget .oo-ui-dropdownWidget-handle:is(:hover, :active, :focus),
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownInputWidget select:is(:hover, :active, :focus) {
 	background: var( --bg-dark );
 	border: 1px solid var( --bdr-hl );
 	color: var( --fg );
 	box-shadow: none;
+}
+
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownInputWidget .oo-ui-indicator-down {
+	background-image: url(
+		"data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22white%22 viewBox=%220 0 12 12%22%3E%3Ctitle%3E down %3C/title%3E%3Cpath d=%22M9.9 2.9 6 6.8 2.1 2.9 1 4l5 5 5-5z%22/%3E%3C/svg%3E"
+	)
 }
 
 .oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownWidget.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle {
