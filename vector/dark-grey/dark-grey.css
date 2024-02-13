@@ -2112,3 +2112,32 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 .tabber .tabber__tab[aria-selected="true"]:hover {
 	color: var(--link);
 }
+
+/*
+ * CommentStreams
+ */
+
+.cs-comments .cs-edit-box {
+	background-color: var(--bg-main);
+}
+
+.cs-comments .cs-body-edit-field {
+	border-color: var(--bdr-hl);
+}
+
+.cs-comments .cs-expanded .cs-comment-header,
+.cs-comments .cs-collapsed .cs-comment-header {
+	background-color: var(--bg-main);
+}
+
+.cs-comments .cs-head-comment > .cs-comment-header {
+	border-top: 1px solid var(--bdr-color);
+}
+
+.cs-comments .cs-comment-author a {
+	color: var(--link);
+}
+
+.cs-comments .cs-comment-details {
+	color: var(--fg-dark);
+}
