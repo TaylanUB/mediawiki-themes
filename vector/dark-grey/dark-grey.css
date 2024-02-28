@@ -2141,3 +2141,116 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 .cs-comments .cs-comment-details {
 	color: var(--fg-dark);
 }
+
+/*
+ * Echo
+ */
+
+/* Toolbar icons */
+.oo-ui-icon-bell, .oo-ui-icon-tray {
+	filter: invert(100%);
+}
+
+/* Popup */
+.mw-echo-ui-overlay .oo-ui-widget.oo-ui-widget-enabled.oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after {
+	border-bottom-color: var(--bg-main2);
+}
+
+.mw-echo-ui-overlay .oo-ui-widget.oo-ui-widget-enabled.oo-ui-popupWidget .oo-ui-popupWidget-popup {
+	background: var(--bg-main2);
+}
+
+.mw-echo-ui-overlay .oo-ui-pendingElement-pending {
+	background-color: var(--bg-main2);
+	background-image: linear-gradient(
+		135deg,
+		var(--bg-dark) 25%,
+		transparent 25%,
+		transparent 50%,
+		var(--bg-dark) 50%,
+		var(--bg-dark) 75%,
+		transparent 75%,
+		transparent
+	);
+}
+
+.mw-echo-ui-overlay .mw-echo-ui-placeholderItemWidget,
+.mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget,
+.mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-unread {
+	background: var(--bg-main);
+}
+
+.mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget:hover,
+.mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-unread:hover {
+	background: var(--bg-main2);
+}
+
+.mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-content-message-header {
+	color: var(--fg-light);
+}
+
+.mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-content-message-body {
+	color: var(--fg);
+}
+
+.mw-echo-ui-overlay .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
+	color: var(--fg);
+}
+
+/* Notifications page */
+.client-js .mw-body-content .mw-echo-special-nojs {
+	/* This is normally a data:image/gif;base64 loading animation.  It's
+	 * not suitable for a dark theme and I can't be arsed to make one.
+	 * It's only shown very briefly, then swapped out via JS.  The
+	 * nojs in the class name may make you think that it stays there
+	 * if JS is disabled, but that is not the case; it's not shown at
+	 * all if JS is disabled.  Don't ask me why the class is named
+	 * like this.
+	 */
+	background-image: none;
+}
+
+.oo-ui-widget.oo-ui-pendingElement-pending {
+	background-color: var(--bg-main);
+	background-image: linear-gradient(
+		135deg,
+		var(--bg-dark) 25%,
+		transparent 25%,
+		transparent 50%,
+		var(--bg-dark) 50%,
+		var(--bg-dark) 75%,
+		transparent 75%,
+		transparent
+	);
+}
+
+.oo-ui-widget .mw-echo-ui-notificationsInboxWidget-toolbarWrapper {
+	background: transparent;
+	box-shadow: none;
+}
+
+.oo-ui-widget .mw-echo-ui-notificationItemWidget,
+.oo-ui-widget .mw-echo-ui-notificationItemWidget-unread {
+	background: var(--bg-main2);
+}
+
+.oo-ui-widget .mw-echo-ui-notificationItemWidget:hover,
+.oo-ui-widget .mw-echo-ui-notificationItemWidget-unread:hover {
+	background: var(--bg-main3);
+}
+
+.oo-ui-widget .mw-echo-ui-notificationItemWidget-content-message-header {
+	color: var(--fg-light);
+}
+
+.oo-ui-widget .mw-echo-ui-notificationItemWidget-content-message-body {
+	color: var(--fg);
+}
+
+.oo-ui-widget .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
+	color: var(--fg);
+}
+
+.oo-ui-widget .mw-echo-ui-notificationItemWidget-content-actions-timestamp {
+	color: var(--fg);
+}
