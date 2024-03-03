@@ -228,6 +228,14 @@ table {
 	background: var(--bg-main3);
 }
 
+.mw-htmlform-ooui .mw-htmlform-matrix tbody tr:nth-child(2n) td {
+	background: var(--bg-main2);
+}
+
+.mw-htmlform-ooui .mw-htmlform-matrix tbody tr:hover td {
+	background: var(--bg-main3);
+}
+
 /*
  * Inputs
  */
