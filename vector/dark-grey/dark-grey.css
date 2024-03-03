@@ -2302,6 +2302,10 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 	color: var(--fg);
 }
 
+.mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-initiallyUnseen {
+	animation: none;
+}
+
 /* Notifications page */
 .client-js .mw-body-content .mw-echo-special-nojs {
 	/* This is normally a data:image/gif;base64 loading animation.  It's
