@@ -2353,3 +2353,27 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 .oo-ui-widget .mw-echo-ui-notificationItemWidget-content-actions-timestamp {
 	color: var(--fg);
 }
+
+/*
+ * DiscussionTools
+ */
+
+.oo-ui-widget .ext-discussiontools-ui-replyWidget-preview {
+	background: var(--bg-main3);
+}
+
+.oo-ui-widget .ext-discussiontools-autotopicsubpopup-image {
+	background: none;
+}
+
+.oo-ui-widget .ext-discussiontools-autotopicsubpopup-body {
+	margin-right: 1em;
+}
+
+.ext-discussiontools-init-publishedcomment {
+	background: none;
+}
+
+.ext-discussiontools-init-targetcomment {
+	background: none;
+}
