@@ -1757,6 +1757,12 @@ td.diff-deletedline .diffchange {
 	color: #000;
 }
 
+.oo-ui-fieldsetLayout:target > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
+	background: var(--bg-dark);
+	outline: none;
+	border-bottom: 2px solid var(--bdr-hl);
+}
+
 /*
  * ===============================
  * = Extension-specific elements =
