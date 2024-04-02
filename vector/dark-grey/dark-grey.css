@@ -328,7 +328,13 @@ a.new:visited {
 	padding: 0;
 }
 
+.mw-parser-output a.external:hover,
+.mw-parser-output a.external:active,
+.mw-parser-output a.external:focus,
 .mw-parser-output a.external:visited,
+.mw-parser-output a.extiw:hover,
+.mw-parser-output a.extiw:active,
+.mw-parser-output a.extiw:focus,
 .mw-parser-output a.extiw:visited {
 	color: var(--link-vis);
 }
