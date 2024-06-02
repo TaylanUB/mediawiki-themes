@@ -1257,7 +1257,8 @@ select:is(:hover, :active, :focus) {
 /*
  * Notification pop-up
  */
-.skin-vector .mw-notification {
+.skin-vector .mw-notification,
+.skin-vector .mw-notification.mw-notification-type-warn {
 	background: var(--bg-dark);
 	color: var(--fg);
 }
