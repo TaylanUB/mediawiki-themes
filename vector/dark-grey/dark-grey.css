@@ -43,6 +43,11 @@ html body {
 	margin-right: var( --right-margin );
 }
 
+/* Debug toolbar */
+#jquery-foot-hovzer {
+	left: 0;
+}
+
 .suggestions {
 	/* We can't get around !important here due to inline CSS. */
 	right: var( --right-margin ) !important;
@@ -1783,6 +1788,43 @@ td.diff-deletedline .diffchange {
 	background: var(--bg-dark);
 	outline: none;
 	border-bottom: 2px solid var(--bdr-hl);
+}
+
+/*
+ * Debug toolbar stuff
+ */
+
+body .mw-debug,
+body .mw-debug-pane,
+body .mw-debug-panelink {
+	background: var(--bg-main);
+}
+
+body .mw-debug-panelink.current,
+body .mw-debug-panelink:hover {
+	background: var(--bg-darker);
+}
+
+body a.mw-debug-panelabel,
+body a.mw-debug-panelabel:visited {
+	color: var(--link);
+}
+
+body .mw-debug table tr {
+	background: var(--bg-dark);
+}
+
+body .mw-debug table tr:nth-child(2n) {
+	background: var(--bg-darker);
+}
+
+body .mw-debug-console-log {
+	background: var(--bg-darker);
+}
+
+body #mw-debug-pane-request th,
+body #mw-debug-pane-request td {
+	background: none;
 }
 
 /*
