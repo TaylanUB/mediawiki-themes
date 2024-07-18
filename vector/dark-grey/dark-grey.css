@@ -69,6 +69,9 @@ html body {
  */
 
 :root {
+	/* Transparent in case there's a bg image. */
+	--bg-body:   rgb(27 27 27 / 90%);
+
 	--bg-main:   rgb(35 35 35);
 	--bg-main2:  rgb(42 42 42);
 	--bg-main3:  rgb(48 48 48);
@@ -153,8 +156,16 @@ html body {
  */
 
 html body {
-	background: var(--bg-dark);
+	/* Maybe we have a background image. */
+	background-color: var(--bg-body);
 	color: var(--fg);
+
+	/* Fix broken Vector footer. */
+	min-height: calc(100% - 30px);
+	padding-bottom: 30px;
+
+	/* Vector sets it to 100% for some reason. */
+	height: auto;
 }
 
 :focus {
@@ -1490,6 +1501,11 @@ div.suggestions-result {
 /*
  * Left-side panel
  */
+#mw-panel {
+	/* Allows using position:sticky in contents. */
+	height: 100%;
+}
+
 #mw-panel .vector-menu-portal .vector-menu-heading {
 	color: var(--fg);
 	background: none;
