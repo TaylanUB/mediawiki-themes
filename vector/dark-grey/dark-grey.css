@@ -43,6 +43,8 @@ html {
  */
 
 :root {
+	--body-width: 1366px;
+	--sidebar-width: 192px;
 	--right-margin: 20px;
 }
 
@@ -50,7 +52,31 @@ html body {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1280px;
+	max-width: var(--body-width);
+}
+
+.mw-body,
+#mw-head-base,
+#left-navigation,
+#mw-data-after-content,
+.mw-footer {
+	margin-left: calc(
+		var(--sidebar-width) + 16px
+	);
+}
+
+#p-logo,
+#p-logo a,
+#mw-panel {
+	width: var(--sidebar-width);
+}
+
+#p-logo {
+	margin-bottom: 0;
+}
+.mw-wiki-logo {
+	margin-top: 20px;
+	background-size: 160px auto;
 }
 
 #p-personal {
@@ -1517,7 +1543,7 @@ div.suggestions-result {
 }
 
 /*
- * Left-side panel
+ * Left-side panel (aka Sidebar)
  */
 #mw-panel {
 	/* Allows using position:sticky in contents. */
@@ -1528,6 +1554,10 @@ div.suggestions-result {
 	color: var(--fg);
 	background: none;
 	border-bottom: 1pt dotted var(--bdr-color);
+}
+
+#mw-panel .vector-menu-portal .vector-menu-content li {
+	font-size: 0.85em;
 }
 
 #mw-panel .vector-menu-portal .vector-menu-content .vector-menu-content-list li a {
@@ -2143,7 +2173,7 @@ form .wikiEditor-ui .wikiEditor-ui-view {
 }
 
 form .wikiEditor-ui .ace-tm {
-	background: var(--bg-dark);
+	background: var(--bg-darker);
 	color: var(--fg);
 }
 
@@ -2152,7 +2182,7 @@ form .wikiEditor-ui .ace-tm .ace_gutter {
 }
 
 form .wikiEditor-ui .ace-tm .ace_gutter-active-line {
-	background: var(--bg-main2);
+	background: var(--bg-main3);
 }
 
 form .wikiEditor-ui .ace-tm .ace_storage,
@@ -2161,8 +2191,20 @@ form .wikiEditor-ui .ace-tm .ace_constant.ace_numeric {
 	color: skyblue;
 }
 
+form .wikiEditor-ui .ace-tm .ace_entity.ace_name.ace_function {
+	color: gold;
+}
+
 form .wikiEditor-ui .ace-tm .ace_cursor {
 	color: var(--fg);
+}
+
+form .wikiEditor-ui .ace-tm .ace_marker-layer .ace_selection {
+	background: var(--bg-main3);
+}
+
+form .wikiEditor-ui .ace-tm .ace_marker-layer .ace_selected-word {
+	background: var(--bg-main2);
 }
 
 form .wikiEditor-ui .ace-tm .ace_print-margin {
