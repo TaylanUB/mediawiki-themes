@@ -2008,8 +2008,8 @@ table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
 	background-image: linear-gradient(to right, transparent, var(--bg-darker)) !important;
 }
 
-.mwe-popups .mwe-popups-settings-icon {
-	filter: invert(100%);
+.mwe-popups .mw-ui-icon {
+	filter: invert( 100% );
 }
 
 /*
