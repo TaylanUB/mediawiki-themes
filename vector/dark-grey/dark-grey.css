@@ -2424,3 +2424,22 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 .wikicollapse > summary:first-of-type {
 	color: var(--link);
 }
+
+/*
+ * Moderation
+ */
+
+.modconflict {
+	background-color: #300;
+}
+
+body #mw-editing-your-version {
+	border: 1px solid #363;
+	background-color: #030;
+	/* The following two fix layout shift issues.
+	 * They are the same as the default, but the default loads
+	 * late for some reason, and doing it here fixes that.
+	 */
+	padding: 5px;
+	margin-bottom: 5px;
+}
