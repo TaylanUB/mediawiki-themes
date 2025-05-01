@@ -2410,3 +2410,17 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 .ext-discussiontools-init-targetcomment {
 	background: none;
 }
+
+/*
+ * Details
+ */
+
+.wikicollapse {
+	border: 1px solid var(--bdr-color);
+	background-color: var(--bg-dark);
+	color: var(--fg);
+}
+
+.wikicollapse > summary:first-of-type {
+	color: var(--link);
+}
