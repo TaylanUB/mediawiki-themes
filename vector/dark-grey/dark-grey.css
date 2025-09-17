@@ -187,8 +187,8 @@ html body {
 	color: var( --fg );
 
 	/* Fix broken Vector footer. */
-	min-height: calc(100% - 30px);
-	padding-bottom: 30px;
+	min-height: calc(100% - 80px);
+	padding-bottom: 80px;
 
 	/* Vector sets it to 100% for some reason. */
 	height: auto;
@@ -201,12 +201,12 @@ html body {
 /*
  * Headers and paragraphs
  */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, .mw-heading h1,
+h2, .mw-heading h2,
+h3, .mw-heading h3,
+h4, .mw-heading h4,
+h5, .mw-heading h5,
+h6, .mw-heading h6 {
 	color: var( --fg );
 }
 
@@ -296,6 +296,11 @@ option {
 	background: var( --bg-dark );
 	border: 1px solid var( --bdr-color );
 	color: var( --fg );
+	box-shadow: none;
+}
+
+input[ type='radio' ] {
+	accent-color: black;
 }
 
 /*
@@ -683,14 +688,16 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
    mw-ui or oo-ui classes. */
 
 .mw-ui-input:not( :disabled ),
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-textInputWidget .oo-ui-inputWidget-input {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-textInputWidget .oo-ui-inputWidget-input,
+.cdx-text-input__input:enabled {
 	background: var( --bg-dark );
 	border: 1px solid var( --bdr-white );
 	color: var( --fg );
 }
 
 .mw-ui-input:not( :disabled ):is( :hover, :active, :focus ),
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-textInputWidget:is( *, :hover ) .oo-ui-inputWidget-input:is( :hover, :active, :focus ) {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-textInputWidget:is( *, :hover ) .oo-ui-inputWidget-input:is( :hover, :active, :focus ),
+.cdx-text-input__input:enabled:is( :hover, :active, :focus ) {
 	border: 1px solid var( --bdr-hl );
 	box-shadow: none;
 	outline: none;
@@ -715,7 +722,8 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
 
 /* Normal buttons with frame */
 .mw-ui-button:not( :disabled ),
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed .oo-ui-buttonElement-button {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed .oo-ui-buttonElement-button,
+body .cdx-button:enabled {
 	background: var( --btn-bg );
 	border: 1px solid var( --btn-bdr );
 	color: var( --btn-fg );
@@ -723,7 +731,8 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
 }
 
 .mw-ui-button:not( :disabled ):is( :hover, :active, :focus ),
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed .oo-ui-buttonElement-button:is( :hover, :active, :focus ) {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed .oo-ui-buttonElement-button:is( :hover, :active, :focus ),
+body .cdx-button:enabled:is( :hover, :active, :focus ) {
 	background: var( --btn-bg-hl );
 	border-color: var( --btn-bdr-hl );
 	color: var( --btn-fg-hl );
@@ -741,7 +750,8 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
 .mw-ui-button:is( .mw-ui-primary,.mw-ui-progressive ):not( :disabled ),
 .oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-primary .oo-ui-buttonElement-button,
 .oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-progressive .oo-ui-buttonElement-button,
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive .oo-ui-buttonElement-button {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive .oo-ui-buttonElement-button,
+.cdx-button:enabled.cdx-button--weight-primary.cdx-button--action-progressive {
 	background: var( --btn-prim-bg );
 	border: 1px solid var( --btn-prim-bdr );
 	color: var( --btn-prim-fg );
@@ -751,7 +761,8 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
 .mw-ui-button:is( .mw-ui-primary,.mw-ui-primary ):not( :disabled ):is( :hover, :active, :focus ),
 .oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-primary .oo-ui-buttonElement-button:is( :hover, :active, :focus ),
 .oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-progressive .oo-ui-buttonElement-button:is( :hover, :active, :focus ),
-.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive .oo-ui-buttonElement-button:is( :hover, :active, :focus ) {
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-buttonElement-framed.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive .oo-ui-buttonElement-button:is( :hover, :active, :focus ),
+.cdx-button:enabled.cdx-button--weight-primary.cdx-button--action-progressive:is( :hover, :active, :focus ) {
 	background: var( --btn-prim-bg-hl );
 	border: 1px solid var( --btn-prim-bdr-hl );
 	color: var( --btn-prim-fg-hl );
@@ -1228,7 +1239,8 @@ select {
 	border-color: var(--bdr-color);
 }
 
-.mw-message-box-warning.mw-message-box {
+.mw-message-box-warning.mw-message-box,
+.cdx-message.cdx-message--warning {
 	background-color: var( --bg-main2 );
 	border: 1px solid var( --bdr-color );
 	color: var( --fg );
@@ -1466,13 +1478,6 @@ div.suggestions-result {
 	background: transparent;
 }
 
-#footer-poweredbyico a {
-	/* Force this to have the background span the entire "button", which is more like what's
-	 * intended than the default display style
-	 */
-	display: inline-block;
-}
-
 /*
  * ==============================
  * = Regular wiki page contents =
@@ -1520,6 +1525,7 @@ table.wikitable :is( th, td ) {
 	background: var( --bg-dark );
 	border: 1px solid var( --bdr-color );
 	padding: 0.2em;
+	color: var( --fg );
 }
 
 table.wikitable th {
@@ -1587,6 +1593,29 @@ table.wikitable code {
 /*
  * Thumbnails
  */
+figure[ typeof~="mw:File/Thumb" ],
+figure[ typeof~="mw:File/Frame" ] {
+	background: var( --bg-dark );
+	border: 1px solid var( --bdr-color );
+	border-bottom: none;
+}
+
+figure[ typeof~="mw:File/Thumb" ] > :not(figcaption) .mw-file-element,
+figure[ typeof~="mw:File/Frame" ] > :not(figcaption) .mw-file-element {
+	background: var( --bg-dark );
+	border: 1px solid var( --bdr-color );
+}
+
+figure[ typeof~="mw:File/Thumb" ] figcaption,
+figure[ typeof~="mw:File/Frame" ] figcaption {
+	background: var( --bg-dark );
+	border: 1px solid var( --bdr-color );
+	border-top: none;
+}
+
+/*
+ * Thumbnails (old MW versions)
+ */
 .thumb .thumbinner {
 	background: var( --bg-dark );
 	border: 1px solid var( --bdr-color );
@@ -1627,6 +1656,20 @@ li.gallerybox div.thumb {
  */
 .vector-body blockquote {
 	border-left: 4px solid var( --bg-main2 );
+}
+
+/*
+ * Collapsible
+ */
+
+body .mw-collapsible-toggle-default::before,
+body .mw-collapsible-toggle-default::after {
+	color: var( --fg );
+}
+
+body .mw-collapsible-toggle-default .mw-collapsible-text,
+body .mw-collapsible-toggle-default .mw-collapsible-text:hover {
+	color: var( --link );
 }
 
 /*
@@ -1809,8 +1852,11 @@ td.diff-deletedline .diffchange {
 /*
  * Preferences
  */
-.mw-prefs-buttons {
+.mw-prefs-buttons,
+#preferences .mw-htmlform-submit-buttons {
 	background: var( --bg-main );
+	border-top: 1px solid var( --bdr-white );
+	box-shadow: none;
 }
 
 /*
@@ -1926,6 +1972,22 @@ body #mw-debug-pane-request td {
 	color: var( --fg );
 }
 
+.wikiEditor-ui .ext-WikiEditor-ResizingDragBar {
+	background: var( --bg-main3 );
+}
+
+.wikiEditor-ui .ext-WikiEditor-ResizingDragBar span {
+	background: var( --link-vis );
+}
+
+.wikiEditor-ui .ext-WikiEditor-ResizingDragBar:hover span {
+	background: var( --link );
+}
+
+.wikiEditor-ui .ext-WikiEditor-ResizingDragBar-ns {
+	border-top: 1px solid var( --bdr-white );
+}
+
 /*
  * Spoilers
  */
@@ -1997,18 +2059,20 @@ table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
  * Popups
  */
 
-.mwe-popups,
-.mwe-popups .mwe-popups-container,
-.mwe-popups .mwe-popups-extract {
-	background: var(--bg-darker) !important;
-	color: var(--fg) !important;
+body .mwe-popups,
+body .mwe-popups .mwe-popups-container,
+body .mwe-popups .mwe-popups-extract {
+	background: var(--bg-darker);
+	color: var(--fg);
+	box-shadow: none;
 }
 
-.mwe-popups .mwe-popups-extract[dir="ltr"]::after {
-	background-image: linear-gradient(to right, transparent, var(--bg-darker)) !important;
+body .mwe-popups .mwe-popups-extract[dir="ltr"]::after {
+	background-image: linear-gradient(to right, transparent, var(--bg-darker));
 }
 
-.mwe-popups .mw-ui-icon {
+body .mwe-popups .mw-ui-icon,
+body .mwe-popups .popups-icon {
 	filter: invert( 100% );
 }
 
@@ -2401,6 +2465,13 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 
 .oo-ui-widget .ext-discussiontools-autotopicsubpopup-body {
 	margin-right: 1em;
+}
+
+.ext-discussiontools-init-pageframe-latestcomment,
+.ext-discussiontools-init-timestamplink,
+.ext-discussiontools-init-section-metaitem,
+.ext-discussiontools-visualenhancements-enabled .ext-discussiontools-init-section-metaitem {
+	color: var( --fg-dark );
 }
 
 .ext-discussiontools-init-publishedcomment {
