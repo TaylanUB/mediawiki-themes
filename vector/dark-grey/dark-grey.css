@@ -1051,7 +1051,31 @@ select {
 }
 
 /*
- * Multiselect widget (see Special:RecentChanges / Special:Watchlist)
+ * Multiselect widget / plain (see TemplateData editor)
+ */
+
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget {
+	background: var( --bg-dark );
+}
+
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget.oo-ui-tagMultiselectWidget-inlined:hover .oo-ui-tagMultiselectWidget-handle,
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget.oo-ui-tagMultiselectWidget-inlined.oo-ui-tagMultiselectWidget-focus .oo-ui-tagMultiselectWidget-handle,
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-tagItemWidget:focus {
+	border: 1px solid var( --bdr-hl );
+	box-shadow: none;
+}
+
+.oo-ui-widget.oo-ui-widget-enabled.oo-ui-tagItemWidget:not(.oo-ui-tagItemWidget-fixed) {
+	background: var( --bg-darker );
+	color: var( --fg-dark );
+}
+
+.oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > .oo-ui-inputWidget-input {
+	color: var( --fg );
+}
+
+/*
+ * Multiselect widget / outlined (see Special:RecentChanges / Special:Watchlist)
  */
 
 /* Overall background, needs to be set because some descendants are transparent */
@@ -1233,14 +1257,16 @@ select {
 	background: transparent;
 }
 
-.oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning,
-.oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice {
+.oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice,
+.oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-success,
+.oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {
 	background-color: var(--bg-main2);
 	border-color: var(--bdr-color);
 }
 
 .mw-message-box-warning.mw-message-box,
-.cdx-message.cdx-message--warning {
+.cdx-message.cdx-message--warning,
+.cdx-message.cdx-message--error {
 	background-color: var( --bg-main2 );
 	border: 1px solid var( --bdr-color );
 	color: var( --fg );
@@ -2513,4 +2539,18 @@ body #mw-editing-your-version {
 	 */
 	padding: 5px;
 	margin-bottom: 5px;
+}
+
+/*
+ * TemplateData
+ */
+
+.tdg-templateDataParamWidget-param-aliases .tdg-templateDataParamWidget-param-alias:first-child {
+	background: var( --bg-dark );
+}
+
+.tdg-templateDataParamWidget-param-aliases .tdg-templateDataParamWidget-param-alias {
+	border: 1px solid var( --bdr-white );
+	background: var( --bg-darker );
+	color: var( --fg );
 }
