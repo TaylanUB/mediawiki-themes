@@ -1809,6 +1809,10 @@ table.mw_metadata td {
 	border: 0;
 }
 
+.mw-enhancedchanges-checkbox + * .mw-enhancedchanges-arrow {
+	background: var( --fg );
+}
+
 #pagehistory li.selected {
 	background: var( --bg-main );
 	color: var( --fg );
