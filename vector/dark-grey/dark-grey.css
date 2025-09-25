@@ -34,7 +34,7 @@ html body {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: var(--body-width);
+	max-width: var( --body-width );
 }
 
 .mw-body,
@@ -43,14 +43,14 @@ html body {
 #mw-data-after-content,
 .mw-footer {
 	margin-left: calc(
-		var(--sidebar-width) + 16px
+		var( --sidebar-width ) + 16px
 	);
 }
 
 #p-logo,
 #p-logo a,
 #mw-panel {
-	width: var(--sidebar-width);
+	width: var( --sidebar-width );
 }
 
 #p-logo {
@@ -215,7 +215,7 @@ h1, h2 {
 }
 
 .vector-body :is(h1, h2), h1.mw-first-heading {
-	border-bottom: 1px solid var(--bdr-color);
+	border-bottom: 1px solid var( --bdr-color );
 }
 
 .vector-body h2 {
@@ -252,20 +252,20 @@ table {
 .mw-parser-output .dataTables_wrapper .dataTables_info,
 .mw-parser-output .dataTables_wrapper .dataTables_processing,
 .mw-parser-output .dataTables_wrapper .dataTables_paginate {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 .mw-parser-output table.dataTable tbody tr,
 .mw-parser-output table.dataTable.display tbody tr.even > .sorting_1,
 .mw-parser-output table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
-	background: var(--bg-main);
+	background: var( --bg-main );
 }
 
 .mw-parser-output table.dataTable.stripe tbody tr.odd,
 .mw-parser-output table.dataTable.display tbody tr.odd,
 .mw-parser-output table.dataTable.display tbody tr.odd > .sorting_1,
 .mw-parser-output table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
-	background: var(--bg-main2);
+	background: var( --bg-main2 );
 }
 
 .mw-parser-output table.dataTable.hover tbody tr:hover,
@@ -274,15 +274,15 @@ table {
 .mw-parser-output table.dataTable.order-column.hover tbody tr:hover > .sorting_1,
 .mw-parser-output table.dataTable.display tbody tr:hover > .sorting_1,
 .mw-parser-output table.dataTable.order-column.hover tbody tr:hover > .sorting_1 {
-	background: var(--bg-main3);
+	background: var( --bg-main3 );
 }
 
 .mw-htmlform-ooui .mw-htmlform-matrix tbody tr:nth-child(2n) td {
-	background: var(--bg-main2);
+	background: var( --bg-main2 );
 }
 
 .mw-htmlform-ooui .mw-htmlform-matrix tbody tr:hover td {
-	background: var(--bg-main3);
+	background: var( --bg-main3 );
 }
 
 /*
@@ -438,7 +438,7 @@ body .ui-dialog .ui-dialog-buttonpane.ui-widget-content {
 }
 
 body .ui-menu .ui-menu-item a {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 .ui-widget .ui-widget-header {
@@ -541,7 +541,7 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
 .ve-ui-mwTransclusionOutlineTemplateWidget-sticky,
 .oo-ui-layout
 .ve-ui-mwTransclusionOutlineControlsWidget {
-	background-color: var(--bg-main2);
+	background-color: var( --bg-main2 );
 }
 
 /*
@@ -1260,8 +1260,8 @@ select {
 .oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice,
 .oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-success,
 .oo-ui-widget.oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {
-	background-color: var(--bg-main2);
-	border-color: var(--bdr-color);
+	background-color: var( --bg-main2 );
+	border-color: var( --bdr-color );
 }
 
 .mw-message-box-warning.mw-message-box,
@@ -1788,8 +1788,8 @@ table.mw_metadata td {
  * File upload
  */
 .mw-destfile-warning {
-	background: var(--bg-dark);
-	border: 1px solid var(--bdr-color);
+	background: var( --bg-dark );
+	border: 1px solid var( --bdr-color );
 }
 
 /*
@@ -1898,7 +1898,7 @@ td.diff-deletedline .diffchange {
 
 /*
  * Make at least database error messages more readable
- * (without this, the text color would be var(--fg), e.g.
+ * (without this, the text color would be var( --fg ), e.g.
  * a rather light shade of grey against a background of
  * #fee7e6, which is fairly unreadable...)
  */
@@ -1907,9 +1907,9 @@ td.diff-deletedline .diffchange {
 }
 
 .oo-ui-fieldsetLayout:target > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
-	background: var(--bg-dark);
+	background: var( --bg-dark );
 	outline: none;
-	border-bottom: 2px solid var(--bdr-hl);
+	border-bottom: 2px solid var( --bdr-hl );
 }
 
 /*
@@ -1919,29 +1919,29 @@ td.diff-deletedline .diffchange {
 body .mw-debug,
 body .mw-debug-pane,
 body .mw-debug-panelink {
-	background: var(--bg-main);
+	background: var( --bg-main );
 }
 
 body .mw-debug-panelink.current,
 body .mw-debug-panelink:hover {
-	background: var(--bg-darker);
+	background: var( --bg-darker );
 }
 
 body a.mw-debug-panelabel,
 body a.mw-debug-panelabel:visited {
-	color: var(--link);
+	color: var( --link );
 }
 
 body .mw-debug table tr {
-	background: var(--bg-dark);
+	background: var( --bg-dark );
 }
 
 body .mw-debug table tr:nth-child(2n) {
-	background: var(--bg-darker);
+	background: var( --bg-darker );
 }
 
 body .mw-debug-console-log {
-	background: var(--bg-darker);
+	background: var( --bg-darker );
 }
 
 body #mw-debug-pane-request th,
@@ -2049,12 +2049,12 @@ body #mw-debug-pane-request td {
 }
 
 .mw-highlight.mw-highlight-lines pre .linenos {
-	color: var(--fg-dark);
+	color: var( --fg-dark );
 }
 
 .mw-highlight.mw-highlight-lines pre a:hover .linenos,
 .mw-highlight.mw-highlight-lines pre .hll a .linenos {
-	color: var(--fg-light);
+	color: var( --fg-light );
 }
 
 /*
@@ -2080,15 +2080,15 @@ body .ui-dialog .ui-icon-closethick {
 }
 
 table.cargoTable {
-	border: 1px solid var(--bdr-white);
+	border: 1px solid var( --bdr-white );
 }
 
 table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n+1) {
-	background: var(--bg-dark);
+	background: var( --bg-dark );
 }
 
 table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
-	background: var(--bg-darker);
+	background: var( --bg-darker );
 }
 
 /*
@@ -2098,13 +2098,13 @@ table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
 body .mwe-popups,
 body .mwe-popups .mwe-popups-container,
 body .mwe-popups .mwe-popups-extract {
-	background: var(--bg-darker);
-	color: var(--fg);
+	background: var( --bg-darker );
+	color: var( --fg );
 	box-shadow: none;
 }
 
 body .mwe-popups .mwe-popups-extract[dir="ltr"]::after {
-	background-image: linear-gradient(to right, transparent, var(--bg-darker));
+	background-image: linear-gradient(to right, transparent, var( --bg-darker ));
 }
 
 body .mwe-popups .mw-ui-icon,
@@ -2130,8 +2130,8 @@ body .mwe-popups .popups-icon {
 
 #mw-scribunto-console
 .mw-scribunto-input {
-	background: var(--bg-dark);
-	border: 1px solid var(--bdr-color);
+	background: var( --bg-dark );
+	border: 1px solid var( --bdr-color );
 	color: inherit;
 	font-family: monospace;
 	font-weight: normal;
@@ -2140,9 +2140,9 @@ body .mwe-popups .popups-icon {
 #mw-scribunto-console
 input[type="button"] {
 	margin-top: 10px;
-	background: var(--btn-prim-bg);
-	border: 1px solid var(--btn-prim-bdr);
-	color: var(--btn-prim-fg);
+	background: var( --btn-prim-bg );
+	border: 1px solid var( --btn-prim-bdr );
+	color: var( --btn-prim-fg );
 }
 
 /*
@@ -2150,20 +2150,20 @@ input[type="button"] {
  */
 
 form .wikiEditor-ui .wikiEditor-ui-view {
-	border: 1px solid var(--bdr-white);
+	border: 1px solid var( --bdr-white );
 }
 
 form .wikiEditor-ui .ace-tm {
-	background: var(--bg-darker);
-	color: var(--fg);
+	background: var( --bg-darker );
+	color: var( --fg );
 }
 
 form .wikiEditor-ui .ace-tm .ace_gutter {
-	background: var(--bg-main);
+	background: var( --bg-main );
 }
 
 form .wikiEditor-ui .ace-tm .ace_gutter-active-line {
-	background: var(--bg-main3);
+	background: var( --bg-main3 );
 }
 
 form .wikiEditor-ui .ace-tm .ace_storage,
@@ -2177,24 +2177,24 @@ form .wikiEditor-ui .ace-tm .ace_entity.ace_name.ace_function {
 }
 
 form .wikiEditor-ui .ace-tm .ace_cursor {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 form .wikiEditor-ui .ace-tm .ace_marker-layer .ace_selection {
-	background: var(--bg-main3);
+	background: var( --bg-main3 );
 }
 
 form .wikiEditor-ui .ace-tm .ace_marker-layer .ace_selected-word {
-	background: var(--bg-main2);
+	background: var( --bg-main2 );
 }
 
 form .wikiEditor-ui .ace-tm .ace_print-margin {
-	background: var(--fg-dark);
+	background: var( --fg-dark );
 }
 
 form .wikiEditor-ui .codeEditor-status {
-	background: var(--bg-main2);
-	border-top: 1px solid var(--bdr-white);
+	background: var( --bg-main2 );
+	border-top: 1px solid var( --bdr-white );
 }
 
 /*
@@ -2202,18 +2202,18 @@ form .wikiEditor-ui .codeEditor-status {
  */
 
 form .wikiEditor-ui .CodeMirror {
-	background: var(--bg-dark);
-	color: var(--fg);
+	background: var( --bg-dark );
+	color: var( --fg );
 	caret-color: white;
 }
 
 form .wikiEditor-ui .CodeMirror-gutters {
-	background: var(--bg-main);
+	background: var( --bg-main );
 	border: none;
 }
 
 form .wikiEditor-ui .CodeMirror-linenumber {
-	color: var(--fg-dark);
+	color: var( --fg-dark );
 }
 
 form .wikiEditor-ui .cm-mw-link,
@@ -2253,7 +2253,7 @@ form .wikiEditor-ui .cm-mw-template-bracket {
 }
 
 form .wikiEditor-ui .cm-mw-templatevariable {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 form .wikiEditor-ui .cm-mw-templatevariable-bracket,
@@ -2263,7 +2263,7 @@ form .wikiEditor-ui .cm-mw-templatevariable-delimiter {
 }
 
 form .wikiEditor-ui .cm-mw-template {
-	color: var(--fg-light);
+	color: var( --fg-light );
 }
 
 form .wikiEditor-ui .cm-mw-apostrophes-bold,
@@ -2318,27 +2318,27 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
  */
 
 .tabber .tabber__header {
-	box-shadow: inset 0 -1px 0 0 var(--bdr-color);
+	box-shadow: inset 0 -1px 0 0 var( --bdr-color );
 }
 
 .tabber .tabber__indicator {
-	background: var(--link-vis);
+	background: var( --link-vis );
 }
 
 .tabber .tabber__tab,
 .tabber .tabber__tab:visited {
-	color: var(--fg-dark);
+	color: var( --fg-dark );
 }
 
 .tabber .tabber__tab:active,
 .tabber .tabber__tab[aria-selected="true"],
 .tabber .tabber__tab[aria-selected="true"]:visited {
-	color: var(--link-vis);
+	color: var( --link-vis );
 }
 
 .tabber .tabber__tab:hover,
 .tabber .tabber__tab[aria-selected="true"]:hover {
-	color: var(--link);
+	color: var( --link );
 }
 
 /*
@@ -2346,28 +2346,28 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
  */
 
 .cs-comments .cs-edit-box {
-	background-color: var(--bg-main);
+	background-color: var( --bg-main );
 }
 
 .cs-comments .cs-body-edit-field {
-	border-color: var(--bdr-hl);
+	border-color: var( --bdr-hl );
 }
 
 .cs-comments .cs-expanded .cs-comment-header,
 .cs-comments .cs-collapsed .cs-comment-header {
-	background-color: var(--bg-main);
+	background-color: var( --bg-main );
 }
 
 .cs-comments .cs-head-comment > .cs-comment-header {
-	border-top: 1px solid var(--bdr-color);
+	border-top: 1px solid var( --bdr-color );
 }
 
 .cs-comments .cs-comment-author a {
-	color: var(--link);
+	color: var( --link );
 }
 
 .cs-comments .cs-comment-details {
-	color: var(--fg-dark);
+	color: var( --fg-dark );
 }
 
 /*
@@ -2381,22 +2381,22 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 
 /* Popup */
 .mw-echo-ui-overlay .oo-ui-widget.oo-ui-widget-enabled.oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor::after {
-	border-bottom-color: var(--bg-main2);
+	border-bottom-color: var( --bg-main2 );
 }
 
 .mw-echo-ui-overlay .oo-ui-widget.oo-ui-widget-enabled.oo-ui-popupWidget .oo-ui-popupWidget-popup {
-	background: var(--bg-main2);
+	background: var( --bg-main2 );
 }
 
 .mw-echo-ui-overlay .oo-ui-pendingElement-pending {
-	background-color: var(--bg-main2);
+	background-color: var( --bg-main2 );
 	background-image: linear-gradient(
 		135deg,
-		var(--bg-dark) 25%,
+		var( --bg-dark ) 25%,
 		transparent 25%,
 		transparent 50%,
-		var(--bg-dark) 50%,
-		var(--bg-dark) 75%,
+		var( --bg-dark ) 50%,
+		var( --bg-dark ) 75%,
 		transparent 75%,
 		transparent
 	);
@@ -2405,24 +2405,24 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 .mw-echo-ui-overlay .mw-echo-ui-placeholderItemWidget,
 .mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget,
 .mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-unread {
-	background: var(--bg-main);
+	background: var( --bg-main );
 }
 
 .mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget:hover,
 .mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-unread:hover {
-	background: var(--bg-main2);
+	background: var( --bg-main2 );
 }
 
 .mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-content-message-header {
-	color: var(--fg-light);
+	color: var( --fg-light );
 }
 
 .mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-content-message-body {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 .mw-echo-ui-overlay .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 .mw-echo-ui-overlay .mw-echo-ui-notificationItemWidget-initiallyUnseen {
@@ -2443,14 +2443,14 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 }
 
 .oo-ui-widget.oo-ui-pendingElement-pending {
-	background-color: var(--bg-main);
+	background-color: var( --bg-main );
 	background-image: linear-gradient(
 		135deg,
-		var(--bg-dark) 25%,
+		var( --bg-dark ) 25%,
 		transparent 25%,
 		transparent 50%,
-		var(--bg-dark) 50%,
-		var(--bg-dark) 75%,
+		var( --bg-dark ) 50%,
+		var( --bg-dark ) 75%,
 		transparent 75%,
 		transparent
 	);
@@ -2463,28 +2463,28 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
 
 .oo-ui-widget .mw-echo-ui-notificationItemWidget,
 .oo-ui-widget .mw-echo-ui-notificationItemWidget-unread {
-	background: var(--bg-main2);
+	background: var( --bg-main2 );
 }
 
 .oo-ui-widget .mw-echo-ui-notificationItemWidget:hover,
 .oo-ui-widget .mw-echo-ui-notificationItemWidget-unread:hover {
-	background: var(--bg-main3);
+	background: var( --bg-main3 );
 }
 
 .oo-ui-widget .mw-echo-ui-notificationItemWidget-content-message-header {
-	color: var(--fg-light);
+	color: var( --fg-light );
 }
 
 .oo-ui-widget .mw-echo-ui-notificationItemWidget-content-message-body {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 .oo-ui-widget .mw-echo-ui-menuItemWidget > .oo-ui-buttonElement-button > .oo-ui-labelElement-label {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 .oo-ui-widget .mw-echo-ui-notificationItemWidget-content-actions-timestamp {
-	color: var(--fg);
+	color: var( --fg );
 }
 
 /*
@@ -2492,7 +2492,7 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
  */
 
 .oo-ui-widget .ext-discussiontools-ui-replyWidget-preview {
-	background: var(--bg-main3);
+	background: var( --bg-main3 );
 }
 
 .oo-ui-widget .ext-discussiontools-autotopicsubpopup-image {
@@ -2523,13 +2523,13 @@ form .wikiEditor-ui .CodeMirror-line > span > span::selection {
  */
 
 .wikicollapse {
-	border: 1px solid var(--bdr-color);
-	background-color: var(--bg-dark);
-	color: var(--fg);
+	border: 1px solid var( --bdr-color );
+	background-color: var( --bg-dark );
+	color: var( --fg );
 }
 
 .wikicollapse > summary:first-of-type {
-	color: var(--link);
+	color: var( --link );
 }
 
 /*
