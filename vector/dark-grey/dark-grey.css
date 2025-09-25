@@ -2073,10 +2073,50 @@ body .ui-dialog .ui-icon-closethick {
  * Cargo
  */
 
+.drilldown-results #drilldown-tables-tabs-wrapper {
+	border-bottom: none;
+}
+
+.drilldown-results .drilldown-tabs {
+	background: none;
+}
+
+.drilldown-results .drilldown-tabs li,
+.drilldown-results .drilldown-tabs li:first-child {
+	background: var( --bg-dark );
+	margin: 2px;
+}
+
+.drilldown-results .drilldown-tabs a,
+.drilldown-results .drilldown-tabs a:active {
+	color: var( --link );
+}
+
+.drilldown-results .drilldown-tabs li.selected a {
+	background: unset;
+	color: var( --fg );
+	font-weight: bold;
+}
+
+.drilldown-header-value + a img {
+	display: none;
+}
+
+.drilldown-header-value + a::after,
+.drilldown-header-value + a:visited::after {
+	content: "\1F5D9";
+	color: var( --link );
+}
+
 .drilldown-results .drilldown-filters-wrapper {
 	background: var( --bg-dark );
 	color: var( --fg-dark );
 	border: 1px solid var( --bdr-white );
+}
+
+.mw-body table.cargo-tablelist.mw-datatable tr.cargo-tablelist-replacement-row:hover td,
+.mw-body table.cargo-tablelist.mw-datatable tr.cargo-tablelist-replacement-row > td {
+	background: var( --bg-darker );
 }
 
 table.cargoTable {
@@ -2089,6 +2129,11 @@ table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n+1) {
 
 table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
 	background: var( --bg-darker );
+}
+
+.mw-body .specialCargoQuery-extraPane {
+	background: none;
+	border: 1px solid var( --bdr-white );
 }
 
 /*
