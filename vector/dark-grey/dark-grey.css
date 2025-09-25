@@ -2073,6 +2073,12 @@ body .ui-dialog .ui-icon-closethick {
  * Cargo
  */
 
+.drilldown-results .drilldown-filters-wrapper {
+	background: var( --bg-dark );
+	color: var( --fg-dark );
+	border: 1px solid var( --bdr-white );
+}
+
 table.cargoTable {
 	border: 1px solid var(--bdr-white);
 }
