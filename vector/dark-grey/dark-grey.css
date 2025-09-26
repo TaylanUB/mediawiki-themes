@@ -88,6 +88,11 @@ html body {
 	margin-right: var( --right-margin );
 }
 
+/* Special pages that overflow */
+.mw-spcontent {
+	overflow: scroll;
+}
+
 /*
  * =======================
  * = Color configuration =
