@@ -51,10 +51,6 @@ html body {
 	margin-right: var( --right-margin );
 }
 
-.mw-body-content {
-	overflow: scroll;
-}
-
 #p-logo,
 #p-logo a,
 #mw-panel {
