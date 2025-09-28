@@ -47,6 +47,14 @@ html body {
 	);
 }
 
+.mw-body {
+	margin-right: var( --right-margin );
+}
+
+.mw-body-content {
+	overflow: scroll;
+}
+
 #p-logo,
 #p-logo a,
 #mw-panel {
@@ -82,15 +90,6 @@ html body {
 /* For Extension:UniversalLanguageSelector */
 .imeselector {
 	position: fixed;
-}
-
-#content {
-	margin-right: var( --right-margin );
-}
-
-/* Special pages that overflow */
-.mw-spcontent {
-	overflow: scroll;
 }
 
 /*
