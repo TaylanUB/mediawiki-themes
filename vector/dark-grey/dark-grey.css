@@ -2141,6 +2141,11 @@ table.cargoTable.noMerge :is(thead,tbody) tr:nth-child(2n) {
 	border: 1px solid var( --bdr-white );
 }
 
+.mw-body .cargo-pagevalues-tableinfo {
+	background: none;
+	border: none;
+}
+
 /*
  * Popups
  */
