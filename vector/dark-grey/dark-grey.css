@@ -1510,6 +1510,12 @@ div.suggestions-result {
  * ==============================
  */
 
+#mw-content-subtitle,
+#contentSub,
+#contentSub2 {
+	color: var( --fg-dark );
+}
+
 /*
  * Table of Contents
  */
@@ -1703,11 +1709,6 @@ body .mw-collapsible-toggle-default .mw-collapsible-text:hover {
  * = Special page contents =
  * =========================
  */
-
-#contentSub,
-#contentSub2 {
-	color: var( --fg-dark );
-}
 
 /*
  * Create account
