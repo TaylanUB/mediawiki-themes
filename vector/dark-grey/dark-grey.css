@@ -383,8 +383,7 @@ a.new:visited {
 .mw-parser-output a.extiw,
 .mw-parser-output a.extiw:visited {
 	color: var( --link );
-	background: none;
-	padding: 0;
+	background-image: url(link_external.svg);
 }
 
 .mw-parser-output a.external:hover,
@@ -537,11 +536,22 @@ body .ui-button.ui-widget:is( :hover, :active, :focus ) {
 /*
  * VisualEditor template dialog
  */
+.ve-ui-overlay-global .oo-ui-windowManager-modal > .oo-ui-dialog {
+	background-color: rgba(0, 0, 0, 0.67);
+}
+
 .oo-ui-widget
 .ve-ui-mwTransclusionOutlineTemplateWidget-sticky,
 .oo-ui-layout
 .ve-ui-mwTransclusionOutlineControlsWidget {
 	background-color: var( --bg-main2 );
+}
+
+.ve-ui-expandableContent-container .ve-ui-expandableContent-fade {
+	background: linear-gradient(to right, transparent 0, var( --bg-main ) 90%);
+}
+.ve-ui-expandableContent-container .ve-ui-expandableContent-toggle {
+	background-color: var( --bg-main );
 }
 
 /*
@@ -897,7 +907,7 @@ select {
 .oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownInputWidget .oo-ui-indicator-down {
 	background-image: url(
 		"data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22 fill=%22white%22 viewBox=%220 0 12 12%22%3E%3Ctitle%3E down %3C/title%3E%3Cpath d=%22M9.9 2.9 6 6.8 2.1 2.9 1 4l5 5 5-5z%22/%3E%3C/svg%3E"
-	)
+	);
 }
 
 .oo-ui-widget.oo-ui-widget-enabled.oo-ui-dropdownWidget.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle {
@@ -1566,15 +1576,15 @@ table.wikitable th {
 }
 
 table.wikitable.jquery-tablesorter th.headerSort {
-	background-image: url(/w/extensions/Theme/vector/dark-grey/sort_both.svg)
+	background-image: url(sort_both.svg);
 }
 
 table.wikitable.jquery-tablesorter th.headerSortUp {
-	background-image: url(/w/extensions/Theme/vector/dark-grey/sort_up.svg)
+	background-image: url(sort_up.svg);
 }
 
 table.wikitable.jquery-tablesorter th.headerSortDown {
-	background-image: url(/w/extensions/Theme/vector/dark-grey/sort_down.svg)
+	background-image: url(sort_down.svg);
 }
 
 table.wikitable tr :is( th, td ) {
@@ -1583,12 +1593,6 @@ table.wikitable tr :is( th, td ) {
 
 table.wikitable tr th {
 	background: var( --bg-dark );
-}
-
-table.wikitable code {
-	background: transparent;
-	border: 0;
-	color: var( --fg );
 }
 
 /*
