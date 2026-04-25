@@ -2625,3 +2625,11 @@ body #mw-editing-your-version {
 	background: var( --bg-darker );
 	color: var( --fg );
 }
+
+/*
+ * ReplaceText
+ */
+
+.ext-replacetext-searchoptions {
+	background-color: transparent;
+}
